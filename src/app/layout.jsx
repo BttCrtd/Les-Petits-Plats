@@ -1,14 +1,16 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Anton, Manrope } from "next/font/google";
 import "@/styles/globals.css";
+import { Footer } from "@/components/Footer/footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const anton = Anton({
   subsets: ["latin"],
+  weight: "400",
+  variable: "--font-anton",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const manrope = Manrope({
   subsets: ["latin"],
+  variable: "--font-manrope",
 });
 
 export const metadata = {
@@ -18,8 +20,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body>{children}</body>
+    <html lang="fr" className={`${anton.variable} ${manrope.variable}`}>
+      <body>
+        <>{children}</>
+        <Footer />
+      </body>
     </html>
   );
 }
