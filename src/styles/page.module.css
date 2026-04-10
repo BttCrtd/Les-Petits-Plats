@@ -8,3 +8,24 @@
   background-color: #ededed;
   font-family: var(--font-anton), sans-serif;
 }
+
+.recipes_container {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  row-gap: 66px;
+}
+
+.recipes_container > :nth-child(1) {
+  justify-self: start;
+}
+
+.recipes_container > :nth-child(2) {
+  justify-self: center;
+}
+
+.recipes_container > :nth-child(3) {
+  justify-self: end;
+}

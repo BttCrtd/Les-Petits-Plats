@@ -1,0 +1,93 @@
+.recipe-card-container {
+  position: relative;
+  width: 380px;
+  height: auto;
+  border-radius: 21px;
+  background-color: #ffffff;
+}
+
+.recipe-card-container article {
+  width: 100%;
+  height: auto;
+  border-radius: 21px;
+  background-color: white;
+}
+
+.recipe-image {
+  object-fit: cover;
+  border-radius: 21px 21px 0 0;
+}
+
+.card-contents {
+  width: 100%;
+  height: auto;
+  padding: 32px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.card-contents h2 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: none;
+  color: #000000;
+}
+
+.card-contents h3 {
+  font-size: 12px;
+  font-weight: 700;
+  margin: none;
+  color: #7a7a7a;
+  font-family: var(--font-manrope), sans-serif;
+}
+
+.card-contents p {
+  font-size: 14px;
+  font-weight: 400;
+  margin: none;
+  color: #1b1b1b;
+  font-family: var(--font-manrope), sans-serif;
+}
+
+.list-ingredients {
+  width: 100%;
+  height: auto;
+  margin-bottom: 26px;
+}
+
+.list-ingredients ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 15px;
+  list-style: none;
+  font-family: var(--font-manrope), sans-serif;
+}
+
+.ingredien span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1b1b1b;
+}
+
+.ingredien p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #7a7a7a;
+}
+
+.time {
+  position: absolute;
+  top: 21px;
+  left: 295px;
+  padding: 5px 15px;
+  background-color: #ffd15b;
+  border-radius: 14px;
+}
+
+.time p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #1b1b1b;
+  font-family: var(--font-manrope), sans-serif;
+}
