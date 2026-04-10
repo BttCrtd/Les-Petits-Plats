@@ -29,3 +29,31 @@
 .recipes_container > :nth-child(3) {
   justify-self: end;
 }
+
+.filters_container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filters {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 65px;
+}
+
+.counter_recipes {
+  height: auto;
+  width: auto;
+}
+
+.counter_recipes p {
+  font-size: 21px;
+  font-weight: 400;
+  color: #1b1b1b;
+}

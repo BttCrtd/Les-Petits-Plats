@@ -41,3 +41,39 @@
 .glass-icon {
   height: 28px;
 }
+
+.filter-content .search-bar {
+  max-width: none;
+  width: auto;
+  padding: 0;
+  border: 1px solid #c6c6c6;
+  border-radius: 2px;
+  margin: 0px 16px;
+  box-sizing: border-box;
+}
+
+.filter-content .search-bar input {
+  width: 100%;
+  margin: 0;
+  color: #c6c6c6;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 9px 0 9px 9px;
+}
+
+.filter-content .search-bar button {
+  width: 13px;
+  height: 14px;
+  margin-right: 9px;
+  padding: 0;
+  color: #7a7a7a;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.filter-content .search-bar button .glass-icon {
+  height: 12px;
+  width: 12px;
+  color: #7a7a7a;
+}
