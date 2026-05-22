@@ -38,6 +38,11 @@
   cursor: pointer;
 }
 
+.search-bar button:hover {
+  background-color: #ffd15b;
+  color: black;
+}
+
 .glass-icon {
   height: 28px;
 }
@@ -76,4 +81,16 @@
   height: 12px;
   width: 12px;
   color: #7a7a7a;
+}
+
+.title-and-research .clear-button{
+  background-color: transparent;
+}
+
+.title-and-research .clear-button .x-mark{
+  color: black;
+}
+
+.title-and-research .clear-button:hover{
+  background-color: transparent;
 }

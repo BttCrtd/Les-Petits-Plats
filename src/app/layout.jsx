@@ -1,7 +1,7 @@
 import { Anton, Manrope } from "next/font/google";
 import "@/styles/globals.css";
 import { Footer } from "@/components/Footer/footer";
-import { Banner } from "@/components/Banner/Banner";
+
 
 const anton = Anton({
   subsets: ["latin"],
@@ -23,7 +23,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr" className={`${anton.variable} ${manrope.variable}`}>
       <body>
-        <Banner />
         <>{children}</>
         <Footer />
       </body>

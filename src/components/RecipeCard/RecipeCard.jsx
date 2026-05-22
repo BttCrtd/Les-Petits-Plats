@@ -4,7 +4,7 @@ import "@/styles/recipeCard.css";
 
 export function RecipeCard({ recipe }) {
   return (
-    <Link href={`/recipe/${recipe.id}`} className="recipe-card-container">
+    <Link href={`/recipe/${recipe.slug}`} className="recipe-card-container">
       <article>
         <div className="time">
           <p>{recipe.time}min</p>

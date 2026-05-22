@@ -18,15 +18,15 @@
   row-gap: 66px;
 }
 
-.recipes_container > :nth-child(1) {
+.recipes_container > :nth-child(3n + 1) {
   justify-self: start;
 }
 
-.recipes_container > :nth-child(2) {
+.recipes_container > :nth-child(3n + 2) {
   justify-self: center;
 }
 
-.recipes_container > :nth-child(3) {
+.recipes_container > :nth-child(3n + 3) {
   justify-self: end;
 }
 
@@ -56,4 +56,39 @@
   font-size: 21px;
   font-weight: 400;
   color: #1b1b1b;
+}
+
+.grid_container {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 102px;
+}
+
+.tags_container {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  gap: 65px;
+  flex-wrap: wrap;
+}
+
+.tags_container div{
+  min-width: 195px;
+}
+
+.filter_tag {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.no_result {
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
 }
