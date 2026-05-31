@@ -7,6 +7,7 @@ import { Filter } from "@/components/Filter/Filter";
 import { Banner } from "@/components/Banner/Banner";
 import { SearchBar } from "@/components/SearchBar/SearchBar";
 import { Tag } from "@/components/Tag/Tag";
+import { TagList } from "@/components/TagList/TagList";
 import { useState } from "react";
 
 export default function Home() {
@@ -118,28 +119,24 @@ export default function Home() {
               />
             </div>
             <div className={styles.tags_container}>
-              <div>
-                {selectedTag.ingredients.map((item, index) => (
-                  <Tag key={index} name={item} onClick={() =>
-                      removeSelectedTag("ingredients", item)
-                    }/>
-                ))}
-              </div>
-              <div>
-                {selectedTag.appliances.map((item, index) => (
-                  <Tag key={index} name={item} onClick={() =>
-                      removeSelectedTag("appliances", item)
-                    }/>
-                ))}
-              </div>
-              <div>
-                {selectedTag.ustensils.map((item, index) => (
-                  <Tag key={index} name={item} onClick={() =>
-                      removeSelectedTag("ustensils", item)
-                    } />
-                ))}
-              </div>
-            </div>
+              <TagList
+                selectedTag={selectedTag}
+                category="ingredients"
+                removeSelectedTag={removeSelectedTag}
+              />
+
+              <TagList
+                selectedTag={selectedTag}
+                category="appliances"
+                removeSelectedTag={removeSelectedTag}
+              />
+
+              <TagList
+                selectedTag={selectedTag}
+                category="ustensils"
+                removeSelectedTag={removeSelectedTag}
+              />
+          </div>
           </div>
           <div className={styles.counter_recipes}>
             <p>
