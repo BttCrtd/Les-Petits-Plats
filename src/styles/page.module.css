@@ -82,7 +82,8 @@
 .filter_tag {
   width: fit-content;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 65px;
 }
 
 .no_result {
@@ -91,4 +92,9 @@
   font-size: 18px;
   font-weight: 400;
   color: #000000;
+}
+
+.filter_and_tag_container {
+  display: flex;
+  flex-direction: column;
 }

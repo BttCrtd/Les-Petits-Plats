@@ -52,7 +52,10 @@ export function Filter({ name, category, select, abbleRecipe, actifTag }) {
             .map((tag, index) => (
               <li
                 key={index}
-                onClick={() => select(category, tag)}
+                onClick={() => {
+                  select(category, tag);
+                  setIsOpen(false);
+                }}
               >
                 {tag}
               </li>

@@ -95,48 +95,60 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.filters_container}>
           <div className={styles.filter_tag}>
-            <div className={styles.filters}>
-              <Filter
-                name="Ingrédients"
-                category="ingredients"
-                select={addSelectedTag}
-                abbleRecipe={filtredRecipes}
-                actifTag={selectedTag}
-              />
-              <Filter
-                name="Appareils"
-                category="appliances"
-                select={addSelectedTag}
-                abbleRecipe={filtredRecipes}
-                actifTag={selectedTag}
-              />
-              <Filter
-                name="Ustensiles"
-                category="ustensils"
-                select={addSelectedTag}
-                abbleRecipe={filtredRecipes}
-                actifTag={selectedTag}
-              />
+            <div className={styles.filter_and_tag_container}>
+              <div className={styles.filters}>
+                <Filter
+                  name="Ingrédients"
+                  category="ingredients"
+                  select={addSelectedTag}
+                  abbleRecipe={filtredRecipes}
+                  actifTag={selectedTag}
+                />
+              </div>
+              <div className={styles.tags_container}>
+                <TagList
+                  selectedTag={selectedTag}
+                  category="ingredients"
+                  removeSelectedTag={removeSelectedTag}
+                />
+              </div>
             </div>
-            <div className={styles.tags_container}>
-              <TagList
-                selectedTag={selectedTag}
-                category="ingredients"
-                removeSelectedTag={removeSelectedTag}
-              />
-
-              <TagList
-                selectedTag={selectedTag}
-                category="appliances"
-                removeSelectedTag={removeSelectedTag}
-              />
-
-              <TagList
-                selectedTag={selectedTag}
-                category="ustensils"
-                removeSelectedTag={removeSelectedTag}
-              />
-          </div>
+            <div className={styles.filter_and_tag_container}>
+              <div className={styles.filters}>
+                <Filter
+                  name="Appareils"
+                  category="appliances"
+                  select={addSelectedTag}
+                  abbleRecipe={filtredRecipes}
+                  actifTag={selectedTag}
+                />
+              </div>
+              <div className={styles.tags_container}>
+                <TagList
+                  selectedTag={selectedTag}
+                  category="appliances"
+                  removeSelectedTag={removeSelectedTag}
+                />
+              </div>
+            </div>
+            <div className={styles.filter_and_tag_container}>
+              <div className={styles.filters}>
+                <Filter
+                  name="Ustensiles"
+                  category="ustensils"
+                  select={addSelectedTag}
+                  abbleRecipe={filtredRecipes}
+                  actifTag={selectedTag}
+                />
+              </div>
+              <div className={styles.tags_container}>
+                <TagList
+                  selectedTag={selectedTag}
+                  category="ustensils"
+                  removeSelectedTag={removeSelectedTag}
+                />
+              </div>
+            </div>
           </div>
           <div className={styles.counter_recipes}>
             <p>
